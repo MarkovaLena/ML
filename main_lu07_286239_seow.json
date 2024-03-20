@@ -1,0 +1,9 @@
+70 + 80,11,50,86,83,16,64,98,87,9,79,52,61,36,36,33,59,7,61,21,28,91,99,1,43,40,3,37,92,34,61,69,37,29,44,84,12,24,70,28
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+kiwi
+
+const isEven = num => num % 2 === 0;
+
